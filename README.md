@@ -4,9 +4,14 @@
 
 Apply to jobs on the PEY portal using the job id, the company name, and the position.
 
+YOU NEED TO EDIT THE LATEX CONFIGURATION IN `work.py` 🙈
+
 ```shell
 $ git clone https://github.com/anonymouspey/apply.git
 $ cd apply
+$ echo 'username = "YOUR USERNAME"' >> peyconfig.py
+$ echo 'password = "YOUR PASSWORD"' >> peyconfig.py
+$ echo 'name = "FIRSTNAME LASTNAME"' >> peyconfig.py
 $ pip install -r requirements.txt
 $ # make sure u have chromedriver installed/on your path
 $ # `brew install chromedriver` if on mac
