@@ -6,15 +6,32 @@
   <meta name="generator" content="pandoc" />
   <title></title>
   <style type="text/css">code{white-space: pre;}</style>
-  <link rel="stylesheet" href="docs/retro.css" type="text/css" />
+  <link rel="stylesheet" href="retro.css" type="text/css" />
 </head>
 <body>
 <h1 id="apply">⚡️Apply⚡️</h1>
 <h2 id="usage">Usage</h2>
 <p>Apply to jobs on the PEY portal using the job id, the company name, and the position.</p>
+<pre class="shell"><code>$ git clone https://github.com/anonymouspey/apply.git
+$ cd apply
+$ pip install -r requirements.txt
+$ # make sure u have chromedriver installed/on your path
+$ # `brew install chromedriver` if on mac
+$ python apply.py JOB_ID &quot;COMPANY_NAME&quot; &quot;POSITION&quot; &quot;TEAM&quot;</code></pre>
+<p>The <code>TEAM</code> argument can be ommitted, and it defaults to &quot;Engineering&quot;.</p>
+<h2 id="warning">Warning</h2>
+<ul>
+<li>this has only been tested on macos.</li>
+<li>idk if this is legal.</li>
+<li>If so, use it</li>
+<li>If not, this was made purely because I was bored and i do not intend to use it.</li>
+</ul>
 <h2 id="requirements">Requirements</h2>
-<p>Python 2.7+ (only tested on 3, since 2 is deprecated 🖕).</p>
-<p>Requires ⚡️work⚡️, the easy cover letter generator.</p>
+<ul>
+<li><p>Python 2.7+ (only tested on 3, since 2 is deprecated 🖕).</p></li>
+<li><p>pdflatex</p></li>
+<li><p>the stuff in <code>requirements.txt</code></p></li>
+</ul>
 <h2 id="todo">Todo</h2>
 <ul>
 <li>[ ] only apply using job id.</li>
