@@ -12,8 +12,12 @@
 <h1 id="apply">⚡️Apply⚡️</h1>
 <h2 id="usage">Usage</h2>
 <p>Apply to jobs on the PEY portal using the job id, the company name, and the position.</p>
+<p>YOU NEED TO EDIT THE LATEX CONFIGURATION IN <code>work.py</code> 🙈</p>
 <pre class="shell"><code>$ git clone https://github.com/anonymouspey/apply.git
 $ cd apply
+$ echo &#39;username = &quot;YOUR USERNAME&quot;&#39; &gt;&gt; peyconfig.py
+$ echo &#39;password = &quot;YOUR PASSWORD&quot;&#39; &gt;&gt; peyconfig.py
+$ echo &#39;name = &quot;FIRSTNAME LASTNAME&quot;&#39; &gt;&gt; peyconfig.py
 $ pip install -r requirements.txt
 $ # make sure u have chromedriver installed/on your path
 $ # `brew install chromedriver` if on mac
